@@ -1,0 +1,189 @@
+body{
+    margin: 0px;
+}
+header {
+  background-color: #04050e;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  display: flex;
+  justify-content: center;
+}
+.imageDisney {
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+.imageMickey {
+  border-radius: 70px;
+  width: 70px;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 0px;
+}
+
+.imageCarousel {
+  width: 100%;
+}
+.icon {
+  width: 30px;
+  margin-top: 13px;
+  margin-left: 55px;
+  margin-right: 9px;
+  /* border-radius: 70px; */
+    /* background-color: white; */
+}
+
+
+header > div {
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  padding-left: 0px;
+  padding-top: 14px;
+
+
+}
+/* header > div:hover{
+  text-decoration: underline;
+  /* text-decoration-thickness: ; 
+  text-underline-position: under;
+  transition: 300ms;
+
+} */
+
+ .underbar{
+  /* width: 10px;
+  height: 3px; */
+  background: rgba(100,100,200,0);
+  left: 50px;
+  top: 20px;
+  position: absolute;
+  -webkit-transition: 0.5s ease;
+}
+
+header > div:hover{
+  text-shadow: 0px -2px 0px rgba(0,0,0,1), 0 0 5px rgba(255,255,255,0.8),0 -4px 15px rgba(255,255,255,0.5);
+}
+header > div:nth-of-type(3):hover ~ .underbar{
+  left: 100px;
+  width: 40px;
+  height: 3px;;
+  background: rgba(255,255,255,1);
+}
+/* header > div:nth-of-type(2):hover ~ .underbar{
+  left: 50px;
+  width: 40px;
+  background: rgba(200,100,100,1);
+}
+&:nth-of-type(3):hover ~ .underbar{
+  left: 100px;
+  width: 40px;
+  height: 1px;
+  background: rgba(150,250,250,0.5);
+  box-shadow: 0 0 10px rgba(70,250,250,1);
+}
+&:nth-of-type(4):hover ~ .underbar{
+  left: 150px;
+  width: 50px;
+  height: 1px;
+  background: rgba(150,250,250,0.5);
+  box-shadow: 0 0 10px rgba(70,250,250,1);
+} */
+
+
+.main{
+  background: linear-gradient(#04050e, #131520, #131520);
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0px, 30px;
+  /*porcentaje que queremos que vea el usuario menos el header*/
+  min-height: calc(100vh - 342px);
+}
+
+.carousel__container{   /*El contendero de todos los items*/
+  white-space: nowrap; /*hace que todo sea en una linea aunque desborde*/
+  margin: 30px 100px;
+  /* padding-bottom: 10px; al hace hover, se amplia por lo que necesita un padding */
+  display: flex;
+  /* justify-content: flex-end; */
+}
+.carousel--item{   /*el estilo de cada cuadrado de video*/
+  width: 345px;
+  height: 175px;
+  border-radius: 8px;
+  background-color: black; 
+  overflow: hidden;
+  margin-right: 25px;
+  display: flex;
+  cursor: pointer;    /*al pasar se pone una manita*/
+  transition: 450ms;  /*un tiempo para las transiciones*/
+  transform-origin: center;
+}
+.carousel--item:hover{
+  width: 350px;
+  height: 185px;
+  /* border: 5px solid grey; */
+  /* background-clip: padding-box; */
+  background-color: white;
+  background-clip: padding-box;
+  border: 6px solid rgba(255,255,255, 0.7);
+}
+
+/* .carousel--item img {width: 100%} */
+
+.preFooter  {
+  display: flex;
+  align-items: center;
+  height: 115px;
+  width: 100%;
+  background-color: black;
+ }
+.preFooter img {
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 55px;
+  display: block;
+  margin: auto;
+}
+footer{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+footer a{
+  color: #D2D2CF;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.postFooter{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+.postFooter a{
+  color: #D2D2CF;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 30px;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+}
