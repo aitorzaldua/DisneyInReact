@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/components/Header.scss';
+import '../assets/styles/components/Header.scss';
 import logo from '../assets/static/logo.png';
 import home3 from '../assets/static/home3.png';
 import search2 from '../assets/static/search2.png';
