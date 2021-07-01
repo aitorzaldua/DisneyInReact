@@ -1,0 +1,46 @@
+
+
+.carousel__container{
+    background: linear-gradient(#04050e, #131520, #131520);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0px, 30px;
+    /*porcentaje que queremos que vea el usuario menos el header*/
+    min-height: calc(100vh - 342px);
+    width: 100%;
+  }
+
+.text {
+    color: #00b4d8;
+    text-shadow: 0 0 15px #d35400;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px;
+    padding-top: 60px;
+}
+
+.text2 {
+    color: #00b4d8;
+    text-shadow: 0 0 15px #d35400;
+    width: 100%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px;
+}
+
