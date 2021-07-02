@@ -4,7 +4,6 @@ import '../assets/styles/components/CarouselItem.scss'
 
 const CarouselItem = () => (
     <div className='carousel__item'>
-
             <video id='video' className ="carousel--item" poster='../assets/static/frozen.png'>
                     <source src='../assets/static/frozen.mp4' type="video/mp4" />
             </video>

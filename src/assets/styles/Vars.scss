@@ -4,13 +4,3 @@
 
 $theme-font: 'Muli', sans-serif;
 
-.main{
-    background: linear-gradient(#04050e, #131520, #131520);
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding: 0px, 30px;
-    /*porcentaje que queremos que vea el usuario menos el header*/
-    min-height: calc(100vh - 342px);
-    width: 100%;
-  }

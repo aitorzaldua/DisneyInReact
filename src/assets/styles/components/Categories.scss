@@ -1,6 +1,7 @@
 
 
-.carousel__container{
+.categories {
+
     background: linear-gradient(#04050e, #131520, #131520);
     display: flex;
     justify-content: flex-start;
@@ -9,7 +10,7 @@
     /*porcentaje que queremos que vea el usuario menos el header*/
     min-height: calc(100vh - 342px);
     width: 100%;
-  }
+}
 
 .text {
     color: #00b4d8;
