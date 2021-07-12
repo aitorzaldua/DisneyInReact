@@ -2,7 +2,7 @@ import {useState, useEffect } from 'react';
 
 const useDisneyData = (API) => {
 
-    const [ videoState, setVideoState] = useState({ mylist: [], movieTrailers: [] });
+    const [ videoState, setVideoState] = useState({ Top: [], Channels: [], Movies: [], Series: [] });
 
     useEffect(() => {
       fetch(API)
