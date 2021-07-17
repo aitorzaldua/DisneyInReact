@@ -1,18 +1,19 @@
 import React, {useState, useEffect } from 'react';
 import Header from '../components/Header';
+import SliderCategories from '../components/SliderCategories';
+import SliderCarousel from '../components/SliderCarousel';
+import SliderCarouselItem from '../components/SliderCarouselItem';
 import Categories from '../components/Categories';
-import CategoriesTop from '../components/CategoriesTop';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
-import CarouselTop from '../components/CarouselTop';
-import CarouselItemTop from '../components/CarouselItemTop';
 import Footer from '../components/Footer';
 import Prefooter from '../components/PreFooter';
 import Postfooter from '../components/PostFooter';
 import useDisneyData from '../Hooks/useDisneyData';
 import '../assets/styles/App.scss';
 
-const API = 'http://localhost:3001/disneyData';
+
+const API = 'http://localhost:3000/disneyData';
 
 const Home = () => {
 
@@ -22,14 +23,13 @@ const disneyData = useDisneyData(API);
   return (
     <div className='Home'>
       <Header />
-      <CategoriesTop title='Top'>
-        <CarouselTop>
-          {
-           disneyData.Top.map((item) => <CarouselItemTop key={item.id} {...item} />)
-          }
+      <SliderCategories title='Slider'>
+        <SliderCarousel>
+          <SliderCarouselItem>
+          </SliderCarouselItem>
+        </SliderCarousel>
+      </SliderCategories>
 
-        </CarouselTop>
-      </CategoriesTop>
       <Categories title='Channels'>
         <Carousel>
           {

@@ -20,4 +20,4 @@ const CarouselItem = ({ title, year, duration, cover, description, source }) => 
 
 
 
-export default CarouselItem;
+export default CarouselItem; 
