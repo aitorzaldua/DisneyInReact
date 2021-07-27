@@ -1,4 +1,5 @@
 import React, {useState, useEffect } from 'react';
+import { connect } from 'react-redux';
 import SliderCategories from '../components/SliderCategories';
 import SliderCarousel from '../components/SliderCarousel';
 import SliderCarouselItem from '../components/SliderCarouselItem';
@@ -12,12 +13,8 @@ import useDisneyData from '../Hooks/useDisneyData';
 import '../assets/styles/App.scss';
 
 
-const API = 'http://localhost:3000/disneyData';
 
-const Home = () => {
-
-const disneyData = useDisneyData(API);
-
+const Home = ({ Channels, Movies, Series }) => {
 
   return (
     <div className='Home'>
@@ -31,7 +28,7 @@ const disneyData = useDisneyData(API);
       <ChannelsCategories title='Channels'>
         <ChannelsCarousel>
           {
-           disneyData.Channels.map((item) => <ChannelsCarouselItem key={item.id} {...item} />)
+           Channels.map((item) => <ChannelsCarouselItem key={item.id} {...item} />)
           }
 
         </ChannelsCarousel>
@@ -39,7 +36,7 @@ const disneyData = useDisneyData(API);
         <Categories title='Movies'>
         <Carousel>
           {
-           disneyData.Movies.map((item) => <CarouselItem key={item.id} {...item} />)
+           Movies.map((item) => <CarouselItem key={item.id} {...item} />)
           }
 
         </Carousel>
@@ -47,14 +44,21 @@ const disneyData = useDisneyData(API);
       <Categories title='Series'>
         <Carousel>
           {
-           disneyData.Series.map((item) => <CarouselItem key={item.id} {...item} />)
+           Series.map((item) => <CarouselItem key={item.id} {...item} />)
           }
 
         </Carousel>
       </Categories>
-      
     </div>
-);
-  }
+  );
+}
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    Channels: state.Channels,
+    Movies: state.Movies,
+    Series: state.Series,
+};
+
+
+  export default connect(mapStateToProps, null)(Home);
