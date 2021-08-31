@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from 'react';
-import { connect } from 'react-redux';
+import { connect, Provider } from 'react-redux';
 import SliderCategories from '../components/SliderCategories';
 import SliderCarousel from '../components/SliderCarousel';
 import SliderCarouselItem from '../components/SliderCarouselItem';
@@ -58,7 +58,8 @@ const mapStateToProps = (state) => {
     Channels: state.Channels,
     Movies: state.Movies,
     Series: state.Series,
+  }
 };
 
 
-  export default connect(mapStateToProps, null)(Home);
+export default connect(mapStateToProps, null)(Home);
