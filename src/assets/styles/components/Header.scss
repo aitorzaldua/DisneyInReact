@@ -9,14 +9,18 @@ header {
     letter-spacing: 2.5px;
     display: flex;
     justify-content: center;
+   
   }
   
   .headerText{
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     letter-spacing: 2.5px;
     color: white;
-    
+    font-size: 18px;
+    padding-left: 0px;
+    padding-top: 14px;
+    display:flex;
+  }
   .imageDisney {
     background-color: transparent;
     width: 120px;
