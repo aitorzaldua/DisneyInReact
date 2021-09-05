@@ -4,13 +4,17 @@
   width: 1400px;
   overflow: hidden;
   text-align: center;
-  position: relative;
+  //position: relative;
   padding: 0;
   list-style: none;
   display: inline-block;
-  box-sizing: border-box;
+  
 
 
   }
 
+  .sliderCarousel {
+    justify-content: center;
+    position: relative;
+  }
   
