@@ -58,6 +58,7 @@ const mapStateToProps = (state) => {
     Channels: state.Channels,
     Movies: state.Movies,
     Series: state.Series,
+  }
 };
 
 
