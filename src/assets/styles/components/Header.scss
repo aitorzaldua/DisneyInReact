@@ -8,20 +8,24 @@ header {
     font-weight: bold;
     letter-spacing: 2.5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    min-width:fit-content;
   }
   
   .headerText{
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     letter-spacing: 2.5px;
     color: white;
+    font-size: 18px;
+    padding-left: 0px;
+    padding-top: 14px;
+    display:flex;
   }
   .imageDisney {
     background-color: transparent;
     width: 120px;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 25px;
     margin-right: 40px;
   }
 
@@ -31,24 +35,21 @@ header {
     width: 70px;
     margin-top: 20px;
     margin-left: 100px;
-    margin-right: 0px;
+    margin-right: 20px;
   }
 
 
   .imageMickey:hover {
-    color: #ffa502;
+    //color: #ffa502;
     box-shadow: 0 0 15px #d35400;
-    text-shadow: 0 0 15px #d35400;
+    //text-shadow: 0 0 15px #d35400;
   }
 
-  .imageCarousel {
-    width: 100%;
-  }
 
   .icon {
     width: 30px;
     margin-top: 13px;
-    margin-left: 55px;
+    margin-left: 25px;
     margin-right: 9px;
     /* border-radius: 70px; */
       /* background-color: white; */
@@ -63,5 +64,7 @@ header {
   }
 
   header > div:hover{
-    text-decoration-line: underline;
+    //color: #ffa502;
+    box-shadow: 0 0 15px #d35400;
+    
   }

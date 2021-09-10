@@ -15,10 +15,14 @@ const Header = () => (
             <img className='imageDisney' src={logo} alt="" />
             <Link to='/'>
                 <img className = 'icon' src={home3} alt="" />
-                <div className = 'headerText'>HOME</div>
             </Link>
+            <Link to='/'>
+            <div className = 'headerText'>HOME</div>
+            </Link>
+              <img className = 'icon' src={search2} alt="" />
+              <div className= 'headerText'>SEARCH</div>
             <img className = 'icon' src={search2} alt="" />
-            <div>SEARCH</div>
+            <div className= 'headerText'>SEARCH</div>
             <img className = 'icon' src={plus} alt="" />
             <div>WATCHLITS</div>
             <img className = 'icon' src={star} alt="" />
@@ -30,13 +34,12 @@ const Header = () => (
             <img className = 'imageMickey' src={mickey} alt="" />
             <li>
               <Link to='/login'>
-              <div className = 'headerText'>Iniciar sesión</div>
+              <div className = 'headerText'>login</div>
               </Link>
-              <div className = 'headerText'>Cerrar Sesión</div>
+              <div className = 'headerText'>logout</div>
             </li>
     </header>
 
 );
 
 export default Header;
-
