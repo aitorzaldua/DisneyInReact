@@ -5,6 +5,7 @@ import avengers from '../assets/static/avengers.png';
 import monsters from '../assets/static/monster4.png';
 import mandalorian from '../assets/static/mandalorian.png';
 import dolphins from '../assets/static/dolphins.png';
+import trops from '../assets/static/trops.jpg';
 
 
 const SliderCarouselItem = () => (
@@ -38,7 +39,7 @@ const SliderCarouselItem = () => (
         <div className="sc__track">
             <li className="sc__slide">
                 <h1> 1 - F</h1>
-                <img className='sc--item' src={frozen}/>
+                <img className='sc--item' src={trops}/>
             </li>
             <li className="sc__slide">
                 <img className='sc--item' src={monsters}/>

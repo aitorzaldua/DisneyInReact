@@ -10,34 +10,37 @@ import film from '../assets/static/film.png';
 import tv2 from '../assets/static/tv2.png';
 import mickey from '../assets/static/mickey.png';
 
+
 const Header = () => (
     <header className='header'>
             <img className='imageDisney' src={logo} alt="" />
-            <Link to='/'>
+            <div className = 'linkGroup'>
+              <Link to='/'>
                 <img className = 'icon' src={home3} alt="" />
-            </Link>
-            <Link to='/'>
-            <div className = 'headerText'>HOME</div>
-            </Link>
+              </Link>
+              <Link to='/'>
+                <div className = 'headerText'>HOME</div>
+              </Link>
               <img className = 'icon' src={search2} alt="" />
               <div className= 'headerText'>SEARCH</div>
-            <img className = 'icon' src={search2} alt="" />
-            <div className= 'headerText'>SEARCH</div>
-            <img className = 'icon' src={plus} alt="" />
-            <div>WATCHLITS</div>
-            <img className = 'icon' src={star} alt="" />
-            <div>ORIGINALS</div>
-            <img className = 'icon' src={film} alt="" />
-            <div>MOVIES</div>
-            <img className = 'icon' src={tv2} alt="" />
-            <div>SERIES</div>
-            <img className = 'imageMickey' src={mickey} alt="" />
-            <li>
-              <Link to='/login'>
-              <div className = 'headerText'>login</div>
-              </Link>
-              <div className = 'headerText'>logout</div>
-            </li>
+              <img className = 'icon' src={plus} alt="" />
+              <div className = 'headerText'>WATCHLITS</div>
+              <img className = 'icon' src={star} alt="" />
+              <div className = 'headerText'>ORIGINALS</div>
+              <img className = 'icon' src={film} alt="" />
+              <div className = 'headerText'>MOVIES</div>
+              <img className = 'icon' src={tv2} alt="" />
+              <div className = 'headerText'>SERIES</div>
+            </div>
+            <div className = 'linkGroup'>
+              <img className = 'imageMickey' src={mickey} alt="" />
+              <li>
+                <Link to='/login'>
+                <div className = 'headerText'>login</div>
+                </Link>
+                <div className = 'headerText'>logout</div>
+              </li>
+            </div>
     </header>
 
 );
